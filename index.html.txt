@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie - Health Informatics & Operations Professional</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #4a5568;
+            --text: #2d3748;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            color: var(--text);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--white);
+            border-bottom: 3px solid var(--primary);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header-container h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .header-container p {
+            color: var(--secondary);
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 6px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p.summary-text {
+            font-size: 1.05rem;
+            color: var(--text);
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .skill-card {
+            background: var(--bg-light);
+            padding: 15px;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+        }
+
+        .skill-card h3 {
+            color: var(--primary);
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .skill-card p {
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .job-dates {
+            font-size: 0.95rem;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .job-company {
+            font-size: 0.95rem;
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .job-bullets {
+            list-style-type: square;
+            margin-left: 20px;
+            font-size: 0.95rem;
+        }
+
+        .job-bullets li {
+            margin-bottom: 6px;
+        }
+
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .edu-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-degree {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .edu-school {
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--secondary);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>LESLIE</h1>
+            <p>New York, NY &nbsp;|&nbsp; leslie.healthcare.informatics@gmail.com &nbsp;|&nbsp; LinkedIn Professional Profile</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                Compliance-focused and data-driven Health Informatics professional possessing a Master of Science in Health Informatics, 
+                a Certificate in Medical Billing and Coding, and over 16 years of comprehensive storefront operations and database management experience. 
+                Proven expertise navigating Electronic Medical Records (EMR), auditing data integrity, and interpreting regulatory guidelines to manage the secure release of information. 
+                Adept at processing specialized correspondence, maintaining computerized tracking systems, and executing extensive professional communication across cross-functional teams.
+            </p>
+        </section>
+
+        <!-- CORE COMPETENCIES -->
+        <section id="skills">
+            <h2>Core Competencies & Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Health Information Management</h3>
+                    <p>Release of Information (ROI), Electronic Medical Records (EMR), Regulatory Compliance, Medico-Legal Guidelines, Subpoena Processing, Provider File Maintenance.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Operations & Quality Assurance</h3>
+                    <p>High-Volume Healthcare Data Entry, System Auditing, Error Reconciliation, Exception-Based Workflows, Detailed Activity Logging, Status Reporting.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Technical Proficiencies</h3>
+                    <p>Advanced Microsoft Excel (Spreadsheets, VLOOKUPs), Microsoft Office Suite, Health Information Systems, Medical Terminology, HIPAA Data Security Standards.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Client & Provider Relations</h3>
+                    <p>Cross-Functional Communication, De-escalation Techniques, Inter-Departmental Coordination, Professional Demeanor, Public & Walk-in Assistance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Operations Manager / Assistant Store Manager</span>
+                    <span class="job-dates">September 2017 – Present</span>
+                </div>
+                <div class="job-company">The Men's Wearhouse | Bayside, NY</div>
+                <ul class="job-bullets">
+                    <li>Manage high-volume operational documentation and digital client profiles, ensuring absolute accuracy and compliance within proprietary tracking databases.</li>
+                    <li>Interpret and execute company guidelines to process sensitive requests, balance financial ledgers, and manage secure record validation workflows.</li>
+                    <li>Coordinate cross-functional communications with internal leadership and external clients to clear account discrepancies and provide tracking updates.</li>
+                    <li>Deliver supportive, high-quality front-counter service to a diverse public, directly assisting walk-in inquiries and resolving registration questions.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Assistant Operations Manager (Storefront Operations)</span>
+                    <span class="job-dates">April 2013 – September 2017</span>
+                </div>
+                <div class="job-company">The Men's Wearhouse | Bayside, NY</div>
+                <ul class="job-bullets">
+                    <li>Enforced strict administrative compliance benchmarks across localized data systems, tracking record transfer activities to prevent processing backlog.</li>
+                    <li>Conducted rigorous data integrity and quality assurance audits, generating status reporting trends to execute swift, team-wide corrective actions.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Customer Service Associate (Storefront Operations)</span>
+                    <span class="job-dates">March 2009 – April 2013</span>
+                </div>
+                <div class="job-company">The Men's Wearhouse | Carle Place, NY</div>
+                <ul class="job-bullets">
+                    <li>Executed continuous high-volume data entry, manually keying client accounts, tracking numbers, and ledger reports to maintain zero-error record standards.</li>
+                    <li>Processed incoming document correspondence, verified signature authorizations, and reconciled payment variances systematically.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Medical Informatics Intern</span>
+                    <span class="job-dates">January 2019 – June 2019</span>
+                </div>
+                <div class="job-company">Northwell Health | New York, NY</div>
+                <ul class="job-bullets">
+                    <li>Navigated secure digital health networks to extract, validate, and process clinical datasets and electronic health record information.</li>
+                    <li>Collaborated cross-functionally with healthcare providers and department personnel to reconcile data exceptions and verify profile configurations.</li>
+                    <li>Upheld flawless compliance standards regarding protected health information (PHI) in absolute accordance with institutional HIPAA data rules.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Education & Credentials</h2>
+            <div class="edu-item">
+                <span class="edu-degree">Certificate in Medical Billing and Coding</span>
+                <span class="edu-school">Queens College, City University of New York</span>
+            </div>
+            <div class="edu-item">
+                <span class="edu-degree">Master of Science in Health Informatics</span>
+                <span class="edu-school">Hofstra University</span>
+            </div>
+            <div class="edu-item">
+                <span class="edu-degree">Bachelor of Science in Sociology</span>
+                <span class="edu-school">Queens College, City University of New York</span>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Leslie. All Rights Reserved. Professional Portfolio Layout.</p>
+    </footer>
+
+</body>
+</html>
